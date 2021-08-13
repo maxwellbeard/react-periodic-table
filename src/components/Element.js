@@ -21,7 +21,7 @@ const StyledElement = styled.div`
     }
 `;
 
-const Element = ({ number, setState }) => {
+const Element = ({ number, setState, className }) => {
     const handleClick = (e) => {
         setState({isOpen: true, number: number});
         console.log(e);
@@ -29,7 +29,7 @@ const Element = ({ number, setState }) => {
     }
 
     return (
-        <StyledElement className={data.elements[number].category} onClick={handleClick}>
+        <StyledElement className={data.elements[number].category + ' ' + className} onClick={handleClick}>
             <div id="atomic-number">{data.elements[number].number}</div>
             <div id="symbol">{data.elements[number].symbol}</div>
             <div id="name">{data.elements[number].name}</div>
