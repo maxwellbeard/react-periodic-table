@@ -24,7 +24,7 @@ const StyledTable = styled.div`
     }
 `;
 
-const Table = () => {
+const Table = ({ setState }) => {
     const createElements = () => {
         let elements = [];
         let lanthanides = [<div className="space"></div>, <div>*</div>];
@@ -36,24 +36,24 @@ const Table = () => {
                     elements.push(<div className="row1"></div>);
                     break;
                 case 4:
-                    elements.push(<Legend className="row2" />);
+                    elements.push(<Legend key={i + 364} className="row2" />);
                     break;
                 case 56:
-                    elements.push(<div key={i}>*</div>);
+                    elements.push(<div>*</div>);
                     break;
                 case 88:
-                    elements.push(<div key={i}>**</div>);
+                    elements.push(<div>**</div>);
                     break;
                 default:
                     break;
             }
 
             if (i >= 56 && i <= 70) {
-                lanthanides.push(<Element key={i} number={i} />);
+                lanthanides.push(<Element key={i} number={i} setState={setState} />);
             } else if (i >= 88 && i <= 102) {
-                actinides.push(<Element key={i} number={i} />);
+                actinides.push(<Element key={i} number={i} setState={setState} />);
             } else {
-                elements.push(<Element key={i} number={i} />);
+                elements.push(<Element key={i} number={i} setState={setState} />);
             }
         }
         return {
