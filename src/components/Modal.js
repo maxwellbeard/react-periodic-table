@@ -10,7 +10,8 @@ const StyledModal = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    width: 25%;
+    width: 30%;
+    min-width: 470px;
     z-index: 1000;
     text-align: center;
     padding: 10px;
@@ -23,7 +24,9 @@ const StyledModal = styled.div`
 
     .elem {
         width: 10vw;
+        min-width: 188px;
         height: 10vw;
+        min-height: 188px;
         margin: auto;
         font-size: xx-large;
         padding-top: 10px;
@@ -35,12 +38,16 @@ const StyledModal = styled.div`
     }
 
     .elem #atomic-number {
-        font-size: 0.8vw;
+        font-size: 15px;
         padding-left: 10px;
     }
 
     .elem #symbol {
-        font-size: 5vw;
+        font-size: 85px;
+    }
+
+    .elem #name {
+        font-size: 25px;
     }
 
     .summary {
@@ -57,7 +64,7 @@ const StyledModal = styled.div`
 
     th, td {
         border-bottom: 1px solid #ddd;
-        padding: 15px;
+        padding: 10px;
     }
 
     th{
@@ -70,6 +77,25 @@ const StyledModal = styled.div`
 
     td {
         text-align: left;
+    }
+
+    @media (max-height: 800px) {
+        font-size: 2vh;
+
+        .elem {
+            width: 135px;
+            min-width: 9vw;
+            height: 135px;
+            min-height: 9vw;
+        }
+
+        .elem #symbol {
+            font-size: 50px;
+        }
+
+        .elem #name {
+            font-size: 20px;
+        }
     }
 `;
 
@@ -89,7 +115,6 @@ const Modal = ({ open, number, setState }) => {
                 <h1>{data.elements[number].name}</h1>
                 <p>{data.elements[number].category}</p>
                 <p>Appearance: {checkUnknown(data.elements[number].appearance)}</p>
-                <br></br>
                 <p className="summary">{data.elements[number].summary}</p>
 
                 <table>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Element from './Element'
-import Legend from './Legend'
 import styled from 'styled-components'
 
 const StyledTable = styled.div`
@@ -33,7 +32,7 @@ const Table = ({ setState }) => {
                     elements.push(<div className="row1"></div>);
                     break;
                 case 4:
-                    elements.push(<Legend key={i + 364} className="row2" />);
+                    elements.push(<div className="row2"></div>);
                     break;
                 case 56:
                     elements.push(<div>*</div>);
