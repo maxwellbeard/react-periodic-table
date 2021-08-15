@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-periodic-table/static/css/main.ed70b72e.chunk.css",
+    "main.js": "/react-periodic-table/static/js/main.3df089f0.chunk.js",
+    "main.js.map": "/react-periodic-table/static/js/main.3df089f0.chunk.js.map",
+    "runtime-main.js": "/react-periodic-table/static/js/runtime-main.1d57a306.js",
+    "runtime-main.js.map": "/react-periodic-table/static/js/runtime-main.1d57a306.js.map",
+    "static/js/2.24baf46c.chunk.js": "/react-periodic-table/static/js/2.24baf46c.chunk.js",
+    "static/js/2.24baf46c.chunk.js.map": "/react-periodic-table/static/js/2.24baf46c.chunk.js.map",
+    "static/js/3.6bb19a60.chunk.js": "/react-periodic-table/static/js/3.6bb19a60.chunk.js",
+    "static/js/3.6bb19a60.chunk.js.map": "/react-periodic-table/static/js/3.6bb19a60.chunk.js.map",
+    "index.html": "/react-periodic-table/index.html",
+    "static/css/main.ed70b72e.chunk.css.map": "/react-periodic-table/static/css/main.ed70b72e.chunk.css.map",
+    "static/js/2.24baf46c.chunk.js.LICENSE.txt": "/react-periodic-table/static/js/2.24baf46c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d57a306.js",
+    "static/js/2.24baf46c.chunk.js",
+    "static/css/main.ed70b72e.chunk.css",
+    "static/js/main.3df089f0.chunk.js"
+  ]
+}
