@@ -5,10 +5,7 @@ import styled from 'styled-components'
 
 const StyledTable = styled.div`
     display: grid;
-    grid-gap: 3px 3px;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
-    justify-content: center;
-    padding-top: 30px;
+    grid-template-columns: repeat(17, auto) 1fr; 
 
     .row1 {
         grid-column: 2 / 18;

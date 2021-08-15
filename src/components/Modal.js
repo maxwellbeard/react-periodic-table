@@ -30,6 +30,17 @@ const StyledModal = styled.div`
         float: left;
         margin-right: 10px;
         margin-bottom: 20px;
+        border: 1px solid black;
+        cursor: default;
+    }
+
+    .elem #atomic-number {
+        font-size: 0.8vw;
+        padding-left: 10px;
+    }
+
+    .elem #symbol {
+        font-size: 5vw;
     }
 
     .summary {

@@ -9,24 +9,33 @@ const StyledElement = styled.div`
     border: 1px solid #333;
     border-collapse: collapse;
     overflow: hidden;
+    cursor: pointer;
 
-    #atomic-number,
-    #symbol,
-    #name {
-        padding: 5px;
+    :hover {
+        border: 3px solid black;
+    }
+
+    #atomic-number {
+        float: left;
+        font-size: 0.5vw;
+        position: absolute;
+    }
+
+    #symbol {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0.5vw;
+        font-size: 2vw;
     }
 
     #name {
-        font-size: 80%;
+        font-size: 0.7vw;
+        text-align: center;
     }
 `;
 
 const Element = ({ number, setState, className }) => {
-    const handleClick = (e) => {
-        setState({isOpen: true, number: number});
-        console.log(e);
-        console.log(number);
-    }
+    const handleClick = (e) => setState({isOpen: true, number: number});
 
     return (
         <StyledElement className={data.elements[number].category + ' ' + className} onClick={handleClick}>
